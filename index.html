@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyaalod's Restaurant</title>
+
+    <!--==== CSS ====-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!--==== Media Screen ====-->
+    <link rel="stylesheet" href="/assets/css/media.css">
+
+    <!--==== Box Icons ====-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <!--==== Navigaton ====-->
+    <header >
+        <div class="header bd-container">
+        <img src="/assets/img/logo.jpg" class="logo" alt="">
+        <div class="menu__toggle" onclick="toggleMenu();"></div>
+        <ul class="nav__menu">  
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#location" onclick="toggleMenu();">Location</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+    
+    <!--==== Home Banner ====-->
+    <section class="banner" id="banner">
+        <div class="container__banner">
+            <h2>We unite Family <br><span> Together </span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellendus maxime atque dolorem quis ea itaque unde minima? Quos voluptatem ducimus earum. Sit quam iusto commodi mollitia perferendis veritatis sapiente.</p>
+            <div class="icons">
+                <a href="#" class="social__icons" ><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#" class="social__icons" ><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+            <a href="#" class="button">Browse Menu</a>
+        </div>
+    </section>
+
+    <!--==== About Us ====-->
+
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="column">
+                <h2 class="text__title"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod ut nulla nostrum eius. Dolorum distinctio vitae necessitatibus placeat tenetur, rerum voluptate odit voluptas quisquam, porro ab pariatur obcaecati nisi, in accusamus. Nemo temporibus odit delectus minima ea amet expedita debitis blanditiis! Sequi porro commodi natus amet, quibusdam maiores praesentium.<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione officiis ipsa, inventore expedita unde soluta. Error recusandae earum aspernatur molestiae.</p>
+                <a href="#" class="button reservation">Reservation</a>
+            </div>
+            <div class="column">
+                <div class="grid__container">
+                    <div class="about__img"><img src="/assets/img/menu2.jpg" alt=""></div>
+                    <div class="about__img"><img src="/assets/img/menu3.jpg" alt=""></div>
+                    <div class="about__img"><img src="/assets/img/menu5.jpg" alt=""></div>
+                    <div class="about__img"><img src="/assets/img/menu1.jpg" alt=""></div>
+                </div>
+
+
+                <!-- <div class="column__img">
+                    <img src="/assets/img/about.jpeg" alt="">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!--==== Menu ====-->
+    <section class="menu" id="menu">
+           
+        <div class="img__container">
+            <h2 class="text__title">Our <span>M</span>enu</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, inventore.</p>
+    
+            <div class="img__grid">
+                <div class="menu__img">
+                    <img src="assets/img/menu3.jpg" alt="">
+                </div>
+    
+                <div class="menu__img">
+                    <img src="assets/img/menu4.jpg" alt="">
+                </div>
+    
+                <div class="menu__img">
+                    <img src="assets/img/menu1.jpg" alt="">
+                </div>
+    
+                <div class="menu__img">
+                    <img src="assets/img/menu2.jpg" alt="">
+                </div>
+    
+                <div class="menu__img">
+                    <img src="assets/img/menu3.jpg" alt="">
+                </div>
+    
+                <div class="menu__img">
+                    <img src="assets/img/menu4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==== Location ====-->
+    <section class="location" id="location">
+        <h2 class="text__title">Our <span>L</span>ocation</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, dolorum.</p>
+    </section>
+
+
+
+
+
+
+
+
+    <!--==== Main Js ====-->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

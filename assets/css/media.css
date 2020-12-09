@@ -1,0 +1,125 @@
+/* ==== Media Query ==== */
+@media screen and (max-width: 800px){
+
+
+    /* ==== Navigation ==== */
+    header, header.sticky
+    {
+        padding: 10px 20px;
+    }
+
+    header .nav__menu
+    {
+        display: none;
+    }
+
+    header .nav__menu.active /* class active automatically added my javascript */
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--white-color);
+    }
+
+    header .nav__menu li
+    {
+        margin-left: 0;
+    }
+
+    header .nav__menu li a
+    {
+        color: var(--dark-color);
+        font-size: 1.6em;
+    }
+
+    .menu__toggle
+    {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        background: url(/assets/img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .menu__toggle.active
+    {
+        background: url(/assets/img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .menu__toggle
+    {
+        filter: invert(1);
+    }
+
+    /* ==== Banner === */
+    .banner .content h2{
+        font-size: 3em;
+        color:white;
+    }
+
+
+    /* ==== About==== */
+    
+
+    section{
+        padding: 20px
+    }
+
+    
+    .text__title{
+        text-align: center;
+    }
+
+    
+    .about__container{
+        flex-direction: column;
+    }
+
+    .about__container .column{
+        position: relative;
+        width: 100%;
+    }
+
+    .about__container .column .grid__container{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+  
+    
+    
+}
+
+@media screen and (max-width: 600px){
+    .img__grid{
+        display: grid;
+        grid-gap: 10px;
+        padding: 5px 0;
+        grid-template-columns: 1fr; 
+    }
+
+    .about__container .column a{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (min-width: 900px){
+    .bd-container{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

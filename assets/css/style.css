@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root{
+    --primary-font: 'Poppins', sans-serif;
+    --white-color: #fff;
+    --dark-color: #111;
+    --bg-color: #ff0157;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bd-container{
+    max-width: 900px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+p
+{
+    font-weight: 600;
+    color: #111;
+}
+/* ==== Header Navigation==== */
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 150px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+header.sticky
+{
+    background-color: var(--white-color);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .nav__menu li a
+{
+    color: var(--dark-color);
+
+}
+.nav__menu
+{
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.nav__menu li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav__menu a
+{
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 300;
+}
+.logo
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header.sticky li a:hover, .nav__menu li a:hover{
+    color: var(--bg-color);
+}
+
+
+
+
+
+/* ==== Banner ==== */
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/img/banner.jpeg);
+    background-size: cover;
+}
+.banner span
+{
+    color: var(--bg-color);
+}
+.container__banner
+{
+    max-width: 900px;
+    text-align: center;
+}
+
+.container__banner h2
+{
+    font-size: 5em;
+    color:var(--white-color);
+}
+
+.container__banner p
+{
+    font-size: em;
+    color:var(--white-color);
+}
+
+.button
+{
+    font-size: 1em;
+    color: var(--white-color);
+    background-color: var(--bg-color);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.button:hover
+{
+    letter-spacing: 6px;
+}
+
+.icons a /* Add spacing between buttons*/
+{
+    margin: 10px;
+}
+
+.social__icons
+{
+    font-size: 2rem;
+    color:var(--white-color);
+}
+
+.social__icons:hover
+{
+    color:var(--bg-color);
+}
+
+
+/* ==== About us ==== */
+section
+{
+    padding: 100px
+}
+
+.about__container
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.column
+{
+    position: relative;
+    width: 48%;
+}
+.text__title
+{
+    color: var(--dark-color);
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.text__title span
+{
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.about__container p
+{
+    text-align: justify;
+}
+
+.column__img
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* About Us Grid */ 
+.grid__container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding:10px;
+}
+
+.grid__container > div
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+   
+}
+
+.about__img img
+{
+    min-width: 100%;
+    height: 175px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.about__img img:hover 
+{
+    transform: scale(1.1);
+}
+/* .column .column__img img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+} */
+
+
+/* ==== Menu ==== */
+
+
+.menu .text__title, p, h2
+{
+    text-align: center;
+}
+.menu .text__title, p{
+    padding-bottom: 10px;
+}
+
+.img__grid{
+    display: grid;
+    grid-gap: 10px;
+    padding: 5px 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); 
+    grid-template-rows: 1fr;
+}
+
+.img__grid .menu__img img
+{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+/* ==== Location ==== */
+
+.location
+{
+    text-align: center;
+}
+
+
+
+
+
+
